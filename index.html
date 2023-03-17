@@ -12,8 +12,10 @@
       referrerpolicy="no-referrer"
     />
     <title>PROYECTOS</title>
-    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
     <link rel="shortcut icon" href="img/logo.png" />
+    <script src="js/script.js"></script>
+    <script defer src="js/formContact.js"></script>
   </head>
   <body>
     <!-- MENU ENCABEZADO -->
@@ -97,7 +99,7 @@
               </li>
               <li>
                 <strong>Teléfono</strong>
-                383 4263475
+                (383)-4263475
               </li>
               <li>
                 <strong>Email</strong>
@@ -139,18 +141,18 @@
                 <span>DEPORTE</span>
               </div>
               <div class="interes">
-                <i class="fa-solid fa-camera-movie"></i>
+                <i class="fa-solid fa-film"></i>
                 <span>CINE</span>
               </div>
               <div class="interes">
-                <i class="fa-solid fa-tv-retro"></i>
+                <i class="fa-solid fa-tv"></i>
                 <span>TV</span>
               </div>
             </div>
           </div>
         </div>
         <a
-          href="CV-Hernan-Diaz-2023.pdf"
+          href="docs/CV-Hernan-Diaz-2023.pdf"
           download="CV-Hernan-Diaz-2023.pdf"
           style="text-decoration: none"
         >
@@ -357,7 +359,10 @@
           </div>
           <div class="proyecto">
             <img src="img/p2.png" alt="React App" />
-            <a href="https://turnos-veterinaria-cta.netlify.app/" target="_BLANK">
+            <a
+              href="https://turnos-veterinaria-cta.netlify.app/"
+              target="_BLANK"
+            >
               <div class="overlay">
                 <h3>Veterinaria Turnos</h3>
                 <p>Web App</p>
@@ -375,21 +380,38 @@
         <div class="fila">
           <!-- Formulario -->
           <div class="col">
-            <input type="text" placeholder="Tú Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Dirección de correo" />
-            <input type="text" placeholder="Tema" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Mensaje"
-            ></textarea>
-            <button>
-              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-              <span class="overlay"></span>
-            </button>
+            <form action="" method="post" id="form" class="form">
+              <label for="nombre"></label>
+              <input
+                type="text"
+                placeholder="Tú Nombre"
+                name="nombre"
+                id="nombre"
+              />
+              <label for="email"></label>
+              <input
+                type="text"
+                placeholder="Dirección de correo"
+                name="email"
+                id="email"
+                required
+              />
+              <label for="tema"></label>
+              <input type="text" placeholder="Tema" name="tema" id="tema" />
+              <label for="consulta"></label>
+              <textarea
+                name="consulta"
+                id="consulta"
+                cols="20"
+                rows="10"
+                placeholder="Consulta"
+              ></textarea>
+              <button type="submit" value="Enviar">
+                <a href="mailto:hernan.diiaz@gmail.com" id="emailSend"></a>
+                Enviar <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
           </div>
           <!-- Mapa -->
           <div class="col">
@@ -434,8 +456,9 @@
           ><i class="fa-brands fa-github"></i
         ></a>
       </div>
+      <div class="pie">
+        <p>Sitio Web de Hernan Diaz &#169; 2023</p>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
