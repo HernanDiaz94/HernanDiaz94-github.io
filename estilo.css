@@ -212,53 +212,53 @@ html {
   width: 100%;
 }
 /* SECCION S K I L L S */
-.skills {
+.habilidades {
   background-color: #252a2e;
   color: #fff;
   padding: 50px 20px;
 }
-.skills .contenido-seccion {
+.habilidades .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
-.skills h2 {
+.habilidades h2 {
   font-size: 48px;
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
 }
-.skills .fila {
+.habilidades .fila {
   display: flex;
 }
-.skills .fila .col {
+.habilidades .fila .col {
   width: 50%;
   padding: 0 20px;
 }
-.skills .fila .col h3 {
+.habilidades .fila .col h3 {
   font-size: 28px;
   font-family: "Righteous";
   margin-bottom: 25px;
 }
-.skills .skill > span {
+.habilidades .habilidad > span {
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
 }
-.skills .skill .barra-skill {
+.habilidades .habilidad .barra-habilidad {
   height: 8px;
   width: 80%;
   background-color: #131517;
   position: relative;
   margin-bottom: 30px;
 }
-.skills .skill .progreso {
+.habilidades .habilidad .progreso {
   background-color: #1cb698;
   position: absolute;
   top: 0;
   left: 0;
   height: 8px;
 }
-.skills .skill .barra-skill span {
+.habilidades .habilidad .barra-habilidad span {
   position: absolute;
   height: 40px;
   width: 40px;
@@ -271,7 +271,7 @@ html {
   font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript {
+.habilidades .habilidad .javascript {
   width: 0%;
   animation: 2s javascript forwards;
 }
@@ -284,7 +284,7 @@ html {
   }
 }
 
-.skills .skill .htmlcss {
+.habilidades .habilidad .htmlcss {
   width: 0%;
   animation: 2s htmlcss forwards;
 }
@@ -297,7 +297,7 @@ html {
   }
 }
 
-.skills .skill .git {
+.habilidades .habilidad .git {
   width: 0%;
   animation: 2s git forwards;
 }
@@ -310,7 +310,7 @@ html {
   }
 }
 
-.skills .skill .node {
+.habilidades .habilidad .node {
   width: 0%;
   animation: 2s node forwards;
 }
@@ -323,7 +323,7 @@ html {
   }
 }
 
-.skills .skill .react {
+.habilidades .habilidad .react {
   width: 0%;
   animation: 2s react forwards;
 }
@@ -336,7 +336,7 @@ html {
   }
 }
 
-.skills .skill .comunicacion {
+.habilidades .habilidad .comunicacion {
   width: 0%;
   animation: 2s comunicacion forwards;
 }
@@ -349,7 +349,7 @@ html {
   }
 }
 
-.skills .skill .trabajo {
+.habilidades .habilidad .trabajo {
   width: 0%;
   animation: 2s trabajo forwards;
 }
@@ -362,7 +362,7 @@ html {
   }
 }
 
-.skills .skill .creatividad {
+.habilidades .habilidad .creatividad {
   width: 0%;
   animation: 2s creatividad forwards;
 }
@@ -375,7 +375,7 @@ html {
   }
 }
 
-.skills .skill .dedicacion {
+.habilidades .habilidad .dedicacion {
   width: 0%;
   animation: 2s dedicacion forwards;
 }
@@ -388,7 +388,7 @@ html {
   }
 }
 
-.skills .skill .liderazgo {
+.habilidades .habilidad .liderazgo {
   width: 0%;
   animation: 2s liderazgo forwards;
 }
@@ -505,39 +505,39 @@ html {
   position: relative;
   bottom: 4px;
 }
-/* SECCION PORTFOLIO */
-.portfolio {
+/* SECCION PROYECTOS */
+.proyectos {
   background-color: #252a2e;
   color: #fff;
   padding: 50px 20px;
 }
-.portfolio .contenido-seccion {
+.proyectos .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
-.portfolio h2 {
+.proyectos h2 {
   font-size: 48px;
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
 }
-.portfolio .galeria {
+.proyectos .galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.portfolio .galeria .proyecto {
+.proyectos .galeria .proyecto {
   position: relative;
   max-width: 340px;
   height: fit-content;
   margin: 10px;
   cursor: pointer;
 }
-.portfolio .galeria .proyecto img {
+.proyectos .galeria .proyecto img {
   width: 100%;
   display: block;
 }
-.portfolio .galeria .proyecto .overlay {
+.proyectos .galeria .proyecto .overlay {
   position: absolute;
   top: 0;
   width: 100%;
@@ -552,15 +552,17 @@ html {
   letter-spacing: 3px;
   opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3 {
+.proyectos .galeria .proyecto .overlay h3 {
   margin-bottom: 20px;
   transition: 1s;
 }
-.portfolio .galeria .proyecto .overlay:hover {
+.proyectos .galeria .proyecto .overlay:hover {
   opacity: 1;
+  color: #131517;
 }
-.portfolio .galeria .proyecto .overlay:hover h3 {
+.proyectos .galeria .proyecto .overlay:hover h3 {
   margin-bottom: 0px;
+  color: #131517;
 }
 /* SECCION CONTACTO */
 .contacto {
@@ -629,7 +631,7 @@ html {
 }
 .contacto .col .info {
   position: absolute;
-  top: 40%;
+  top: 50%;
   background-color: #252a2e;
   padding: 20px;
   max-width: 350px;
@@ -717,13 +719,13 @@ footer .arriba {
     width: fit-content;
   }
 
-  .skills .fila {
+  .habilidades .fila {
     display: block;
   }
-  .skills .fila .col {
+  .habilidades .fila .col {
     width: 100%;
   }
-  .skills .fila .col .barra-skill {
+  .habilidades .fila .col .barra-habilidad {
     width: 100%;
   }
 
@@ -737,14 +739,14 @@ footer .arriba {
     margin-left: 20px;
   }
 
-  .portfolio .galeria {
+  .proyectos .galeria {
     display: block;
     width: 100%;
   }
-  .portfolio .galeria .proyecto {
+  .proyectos .galeria .proyecto {
     max-width: 100%;
   }
-  .portfolio .galeria .proyecto img {
+  .proyectos .galeria .proyecto img {
     width: 100%;
   }
   .contacto .fila {

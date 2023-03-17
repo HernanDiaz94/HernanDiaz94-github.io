@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Portfolio</title>
+    <title>PROYECTOS</title>
     <link rel="stylesheet" href="estilo.css" />
     <link rel="shortcut icon" href="img/logo.png" />
   </head>
@@ -26,11 +26,13 @@
           <ul>
             <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
             <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#habilidades" onclick="seleccionar()">HABILIDADES</a>
+            </li>
             <li>
               <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
             </li>
-            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
             <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
           </ul>
         </nav>
@@ -44,7 +46,7 @@
     <section id="inicio" class="inicio">
       <div class="contenido-banner">
         <div class="contenedor-img">
-          <img src="img/hero.png" alt="" />
+          <img src="img/foto_perfil.png" alt="foto_perfil" />
         </div>
         <h1>HERNAN DIAZ</h1>
         <h2>Developer Web</h2>
@@ -136,6 +138,14 @@
                 <i class="fa-solid fa-person-hiking"></i>
                 <span>DEPORTE</span>
               </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera-movie"></i>
+                <span>CINE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-tv-retro"></i>
+                <span>TV</span>
+              </div>
             </div>
           </div>
         </div>
@@ -152,93 +162,93 @@
       </div>
     </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
+    <!-- SECCION HABILIDADES -->
+    <section class="habilidades" id="habilidades">
       <div class="contenido-seccion">
-        <h2>Skills</h2>
+        <h2>Habilidades</h2>
         <div class="fila">
-          <!-- Technical Skill -->
+          <!-- Habilidades Tecnicas-->
           <div class="col">
-            <h3>Technical Skills</h3>
-            <div class="skill">
+            <h3>Habilidades Tecnicas</h3>
+            <div class="habilidad">
               <span>Javascript</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>70%</span>
                 </div>
               </div>
             </div>
-            <div class="skill">
+            <div class="habilidad">
               <span>HTML & CSS</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>80%</span>
                 </div>
               </div>
             </div>
-            <div class="skill">
+            <div class="habilidad">
               <span>React</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>50%</span>
                 </div>
               </div>
             </div>
-            <div class="skill">
+            <div class="habilidad">
               <span>Git</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>40%</span>
                 </div>
               </div>
             </div>
-            <div class="skill">
+            <div class="habilidad">
               <span>Node</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>30%</span>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Professional Skills -->
+          <!-- Habilidades Profesionales -->
           <div class="col">
-            <h3>Professional Skills</h3>
-            <div class="skill">
+            <h3>Habilidades Profesionales</h3>
+            <div class="habilidad">
               <span>Comunicación</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>80%</span>
                 </div>
               </div>
             </div>
-            <div class="skill">
+            <div class="habilidad">
               <span>Trabajo en Equipo</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>70%</span>
                 </div>
               </div>
             </div>
-            <div class="skill">
+            <div class="habilidad">
               <span>Creatividad</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>70%</span>
                 </div>
               </div>
             </div>
-            <div class="skill">
+            <div class="habilidad">
               <span>Dedicación</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>50%</span>
                 </div>
               </div>
             </div>
-            <div class="skill">
+            <div class="habilidad">
               <span>Liderazgo</span>
-              <div class="barra-skill">
+              <div class="barra-habilidad">
                 <div class="progreso">
                   <span>30%</span>
                 </div>
@@ -275,11 +285,11 @@
               <span class="fecha">2016 - actualidad</span>
               <p>
                 Hace varios años que estoy capacitandome como programador con
-                las siguientes tecnologias: Curso de JavaScript Basico (2016).
-                Curso de C para Sist. Emb. (2017). Curso de Phyton basico
-                (2017). Curso de React Udemy (2020 - 2021). Capacitacion de
-                Phinx Lab (2021). Plan Argentina Programa (2022). Curso de RPA
-                (2023 (C)). Capacitacion XAcademy(2023 (C)).
+                las siguientes cursos: Curso de JavaScript Basico (2016). Curso
+                de C para Sist. Emb. (2017). Curso de Phyton basico (2017).
+                Curso de React Udemy (2020 - 2021). Capacitacion de Phinx Lab
+                (2021). Plan Argentina Programa (2022). Curso de RPA (2023 (C)).
+                Capacitacion XAcademy(2023 (C)).
               </p>
               <div class="conectori">
                 <div class="circuloi"></div>
@@ -322,31 +332,37 @@
       </div>
     </section>
 
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="proyectos">
       <div class="contenido-seccion">
-        <h2>PORTFOLIO</h2>
+        <h2>PROYECTOS</h2>
         <div class="galeria">
           <div class="proyecto">
-            <img src="img/p1.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
+            <img src="img/p1.png" alt="UNCA los altos" />
+            <a href="http://sedelosaltos.unca.edu.ar/" target="_BLANK">
+              <div class="overlay">
+                <h3>Sede Los Altos - UNCA</h3>
+                <p>Institucion</p>
+              </div>
+            </a>
           </div>
           <div class="proyecto">
-            <img src="img/p2.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
+            <img src="img/p1.png" alt="UNCA belen" />
+            <a href="http://sedebelen.unca.edu.ar/" target="_BLANK">
+              <div class="overlay">
+                <h3>Sede Belen - UNCA</h3>
+                <p>Institucion</p>
+              </div>
+            </a>
           </div>
           <div class="proyecto">
-            <img src="img/p3.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
+            <img src="img/p2.png" alt="React App" />
+            <a href="https://turnos-veterinaria-cta.netlify.app/" target="_BLANK">
+              <div class="overlay">
+                <h3>Veterinaria Turnos</h3>
+                <p>Web App</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -385,12 +401,12 @@
                   Catamarca, Argentina
                 </li>
                 <li>
-                  <i class="fa-solid fa-mobile-screen"></i>
-                  Whatsapp: +549 383 - 4263475
+                  <i class="fa-brands fa-whatsapp"></i>
+                  Whatsapp: 3834263475
                 </li>
                 <li>
                   <i class="fa-solid fa-envelope"></i>
-                  Email: hernan.diiaz@gmail.com
+                  hernan.diiaz@gmail.com
                 </li>
               </ul>
             </div>
